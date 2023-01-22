@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --fonts: 'Open Sans', sans-serif;
+    --primary-color: #fff;
+
+}
+
+/* Navbar design */s
+.navbar {
+    background: transparent;
+}
+
+body {
+    font-family: var(--fonts) !important;
+    background: url("https://i.ibb.co/g48c9zZ/bg-overlay.png");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.site-title {
+    font-size: 1.5rem;
+    letter-spacing: .2rem;
+    color: var(--primary-color);
+    display: none;
+}
+.cus-nav {
+    column-gap: 50px !important;
+}
+
+.cus-nav .nav-item .nav-link {
+    font-size: 1.3rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* border: 1px solid white; */
+    padding: 30px 0;
+    line-height: 2rem !important;
+}
+
+.left-card > h1 {
+    color: var(--primary-color);
+    font-weight: 400;
+    letter-spacing: .1rem;
+}
+.left-card > p {
+    color: #77df99;
+}
+
+.right-card {
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.index-photo {
+    max-height: 67vh;
+    max-width: 92%;
+    background-size:contain;
+}
+
+.btn-design {
+    background-color: #FF8400 !important;
+    border-radius: 120px;
+    border: none;
+}
+
+.btn:focus:not(:focus-visible) {
+    outline:#FF8400;
+    border: 1px solid #FF8400;
+    box-shadow: 0px 0px 5px #FF8400;
+  }
+
+/* =====Media Queries===== */
+@media only screen and (max-width: 1000px) {
+    .navbar-brand img {
+        width: 58px !important;
+    }
+    .cus-nav {
+        text-align: center;
+        row-gap: 12px;
+    }
+
+    .index-photo {
+        height: 43vh;
+    }
+    
+}
+
+
+@media only screen and (max-width: 768px) {
+    .navbar-brand img {
+        width: 58px !important;
+    }
+    .site-title {
+        display:inherit;
+    }
+    .cus-nav {
+        text-align: center;
+        row-gap: 12px;
+    }
+    .content {
+        padding: 30px;
+        line-height: 1.5rem !important;
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+    }
+    .index-photo {
+        /* display: none !important; */
+        margin: 0 auto;
+    }
+    .left-card {
+        grid-column: 1 / -1;
+        order: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        
+    }
+}
