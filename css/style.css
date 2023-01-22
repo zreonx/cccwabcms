@@ -10,6 +10,14 @@
 
 }
 
+
+/* Reusable CSS */
+
+.spacing, .cus-nav .nav-item .nav-link, .site-title {
+    letter-spacing: .2rem;
+}
+
+
 /* Navbar design */s
 .navbar {
     background: transparent;
@@ -17,7 +25,7 @@
 
 body {
     font-family: var(--fonts) !important;
-    background: url("https://i.ibb.co/g48c9zZ/bg-overlay.png");
+    background: url("../images/bg_overlay.png");
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -26,7 +34,6 @@ body {
 
 .site-title {
     font-size: 1.5rem;
-    letter-spacing: .2rem;
     color: var(--primary-color);
     display: none;
 }
@@ -38,7 +45,7 @@ body {
     font-size: 1.3rem;
     font-weight: 300;
     text-transform: uppercase;
-    letter-spacing: .2rem;
+    
 }
 
 .content {
@@ -46,7 +53,7 @@ body {
     grid-template-columns: repeat(2, 1fr);
     /* border: 1px solid white; */
     padding: 30px 0;
-    line-height: 2rem !important;
+    line-height: 1.5rem !important;
 }
 
 .left-card > h1 {
@@ -54,8 +61,26 @@ body {
     font-weight: 400;
     letter-spacing: .1rem;
 }
-.left-card > p {
+
+.left-card > h2 {
+    color: var(--primary-color);
+    font-weight: 400;
+    letter-spacing: .1rem;
+}
+
+.left-card > h5 {
+    color: #0ADEFF;
+    font-weight: 300;
+    letter-spacing: .1rem;
+}
+.left-card p:first-of-type {
     color: #77df99;
+    font-style: italic;
+}
+
+.left-card p+p{
+    color: #fff;
+    font-size: 1.2rem;
 }
 
 .right-card {
@@ -70,6 +95,13 @@ body {
     background-size:contain;
 }
 
+.about-photo {
+    margin-top: 80px;
+    max-height: 80vh;
+    max-width: 100%;
+    background-size:contain;
+}
+
 .btn-design {
     background-color: #FF8400 !important;
     border-radius: 120px;
@@ -81,6 +113,7 @@ body {
     border: 1px solid #FF8400;
     box-shadow: 0px 0px 5px #FF8400;
   }
+
 
 /* =====Media Queries===== */
 @media only screen and (max-width: 1000px) {
@@ -127,6 +160,9 @@ body {
         flex-direction: column;
         justify-content: center;
         text-align: center;
-        
+    }
+
+    .about-photo {
+        margin: 0;
     }
 }
