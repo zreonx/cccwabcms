@@ -92,14 +92,39 @@ body {
 .index-photo {
     max-height: 67vh;
     max-width: 92%;
-    background-size:contain;
 }
 
 .about-photo {
     margin-top: 80px;
     max-height: 80vh;
     max-width: 100%;
-    background-size:contain;
+}
+
+.contact-photo {
+    max-height: 80vh;
+    max-width: 80%;
+    
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: flex-start;
+    line-height: 1rem;
+}
+.contacts > div img {
+    width: 50px !important;
+
+}.icons {
+    gap: 20px;
+    
+}
+
+.contacts > div p{
+    margin: 0;
+    color: #fff !important;
+    font-style:normal !important;
 }
 
 .btn-design {
@@ -130,7 +155,6 @@ body {
     }
     
 }
-
 
 @media only screen and (max-width: 768px) {
     .navbar-brand img {
@@ -164,5 +188,9 @@ body {
 
     .about-photo {
         margin: 0;
+    }
+
+    .right-card {
+        justify-content: center;
     }
 }
