@@ -2,7 +2,7 @@
     $title = "About Us";
     require_once "includes/header.php";
 ?>
-    <div class="content">
+    <div class="content animated fadeInDown">
         <div class="left-card">
             <h1>About Us</h1>
             <h2>CCCWABCMS</h2>

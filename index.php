@@ -4,7 +4,7 @@
     require_once 'includes/header.php';
 ?>
 
-        <div class="content">
+        <div class="content animated fadeInDown">
             <div class="left-card">
                 <h1>City College of Calapan Web and Android-Based Clearance Management System</h1>
                 <p>A platform that streamlines the clearance signing procedure with ease.</p>

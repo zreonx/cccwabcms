@@ -4,7 +4,7 @@
 ?>
 
 <i class='far fa-address-card' style='font-size:36px'></i>
-<div class="content">
+<div class="content animated fadeInDown">
     <div class="left-card">
         <span><i class='bx bxs-contact'></i></span>
         <h1>Contact Us</h1>
