@@ -18,36 +18,35 @@
 
     <link rel="stylesheet" href="css/style.css">
 </head>
+<div class="loader">
+    <div></div>
+</div>
 <body>
-    <div class="loader">
-        <div></div>
-    </div>
-        <div class="content">
-            <nav class="navbar navbar-expand-md navbar-dark">
-                <div class="container ">
-                    <a class="navbar-brand" href="#">
-                        <img src="images/ccc_logo.png" alt="Logo" style="width:80px;" class="rounded-pill"> 
-                    </a>
-                    <div class="site-title">CCCWABCMS</div>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                        <ul class="navbar-nav ms-auto cus-nav">
-                            <li class="nav-item">
-                                <a class="nav-link" href="index.php">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contact.php">Contact</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="about.php">About Us</a>
-                            </li>  
-                            <li class="nav-item">
-                                <a class="nav-link" href="login.php">Login</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-            <div class="container d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <div class="container ">
+            <a class="navbar-brand" href="#">
+                <img src="images/ccc_logo.png" alt="Logo" style="width:80px;" class="rounded-pill"> 
+            </a>
+            <div class="site-title">CCCWABCMS</div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav ms-auto cus-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.php">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.php">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.php">About Us</a>
+                    </li>  
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.php">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container d-flex flex-column min-vh-100">

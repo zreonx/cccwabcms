@@ -266,9 +266,6 @@ body {
 
 /* ====== LOADE ======= */
 
-.content {
-    display: inherit;
-}
 
 .loader { 
     position: relative;
