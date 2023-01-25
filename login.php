@@ -22,7 +22,7 @@
                             <label class="form-label">Password</label>
                             <input type="password" placeholder="Password" class="form-control" >
                         </div>
-                        <div class="mb-3 d-flex btn-flex">
+                        <div class="mb-5 d-flex btn-flex">
                             <a href="#" class="btn btn-lg btn-primary btn-login " onclick="this.blur();">LOGIN</a>
                         </div>
                        
