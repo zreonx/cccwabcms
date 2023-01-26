@@ -30,6 +30,7 @@ body {
     min-width: 250px;
     max-width: 250px;
     font-family: var(--fonts);
+    transition: .4s all ease-in;
 }
 
 .content {
