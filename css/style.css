@@ -288,6 +288,10 @@ body {
     animation: spin 1.5s infinite linear;
 }
 
+.error {
+    margin: 0 !important;
+}
+
 @keyframes spin {
     100% {
         transform: rotate(360deg);

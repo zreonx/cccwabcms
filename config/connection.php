@@ -2,7 +2,7 @@
     $server = "localhost";
     $username = "root";
     $password = "";
-    $dbname = "attendance_db";
+    $dbname = "cccwabcms_db";
     $charset = 'utf8mb4';
 
     $dsn = "mysql:host=$server;dbname=$dbname;charset=$charset;";
@@ -13,8 +13,8 @@
         throw new PDOException($e->getMessage());
     }
 
-    require_once '../classes/Authentication.php';
-    $connection = new Authentication($conn);
+    require_once 'classes/Authentication.php';
+    $account = new Authentication($conn);
 
 
 ?>
