@@ -12,8 +12,7 @@
                     <h1 class="text-center">CCCWABCMS</h1>
                 </div>
                 <div class="card-body">
-                    
-                    <form action="">
+                    <form action="<?php echo htmlentities($_SERVER['PHP_SELF']) ?>" method="POST">
                         <div class="mb-3">
                             <label class="form-label">Student ID</label>
                             <input type="text" placeholder="Student Id" class="form-control" >
@@ -23,7 +22,7 @@
                             <input type="password" placeholder="Password" class="form-control" >
                         </div>
                         <div class="mb-5 d-flex btn-flex">
-                            <a href="#" class="btn btn-lg btn-primary btn-login " onclick="this.blur();">LOGIN</a>
+                            <button type="submit" name="submit" class="btn btn-lg btn-primary btn-login " onclick="this.blur();">LOGIN</button>
                         </div>
                        
                     </form>
