@@ -29,8 +29,13 @@ body {
     background: var(--themecolor);
     min-width: 250px;
     max-width: 250px;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    overflow-y: auto;
     font-family: var(--fonts);
     transition: .4s all ease-in;
+    z-index: 999;
 }
 
 .content {
@@ -43,16 +48,17 @@ hr .h-color {
 }
 
 
-.sidebar li.active {
-    background-color: #eee;
+.col-ul li.active {
+    background-color: #eee !important;
     border-radius: 12px;
+    color: #113886 !important;
 }
 
-.sidebar li.active a, .sidebar li.active a:hover {
+.col-ul li.active a, .col-ul li.active a:hover {
     color: var(--themecolor);
 }
 
-.sidebar li a {
+.col-ul li a {
     color: #fff;
 }
 
@@ -62,6 +68,27 @@ hr .h-color {
 .space {
     margin:0 10px;
 }
+
+.link-collapse {
+    display: flex;
+    align-items: center;
+}
+
+.caret {
+    margin-left: auto !important;
+}
+
+.collapse-design {
+    display: flex;
+    flex-direction: column;
+}
+.collapse-design ul li{
+    padding:5px 20px !important;
+}
+.collapse-design ul li a{
+    text-decoration: none;
+}
+
 
 @media only screen and (max-width: 1000px){
 }
@@ -87,3 +114,24 @@ hr .h-color {
     }
 }
 
+/* === Scroll Bar ===  */
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #d3d3d3; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #113886; 
+    border-radius: 12px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #0139a9; 
+  }

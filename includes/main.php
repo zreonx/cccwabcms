@@ -28,14 +28,70 @@
             <div class="header-box px-3 pt-0 pb-4">
                 <h1 class="fs-4 d-flex align-items-center justify-content-center gap-2"><img src="../images/ccc_logo.png" class="logo" alt=""></h1>
             </div>
-            <ul class="list-unstyled px-2">
+            <ul class="col-ul list-unstyled px-2 text-light ">
                 <li class="active px-2"><a class="text-decoration-none py-2 d-block" href="../admin/dashboard.php"><i class="fa-solid fa-house space"></i>Dashboard</a></li>
-                <li class="px-2"><a class="text-decoration-none py-2 d-block" href="#"><i class="fa-solid fa-users space"></i>Student</a></li>
-                <li class="px-2"><a class="text-decoration-none py-2 d-block" href="#"><i class="fa-solid fa-signature space"></i>Signatories</a></li>
-                <li class="px-2"><a class="text-decoration-none py-2 d-block" href="#"><i class="fa-solid fa-file-circle-check space"></i></i></i>Clearance</a></li>    
+                <!-- Student Collapse -->
+                <li class="px-2 ">
+                    <div class="link-collapse py-2" data-bs-toggle="collapse" href="#collapseOne">
+                        <i class="fa-solid fa-users space"></i>
+                        <span>Student</span>
+                        <i class="caret fa-solid fa-regular fa-angle-down"></i>
+                    </div>
+                </li>
+                <div class="px-2 collapse collapse-design" id="collapseOne" data-bs-parent="#acordion">
+                    <ul class="list-unstyled">
+                        <li><i class="space fa-solid fa-clipboard-user"></i></i><a href="#">Student Record</a></li>
+                        <li><i class="space fa-solid fa-user-pen"></i><a href="#">Modify Student</a></li>
+                        <li><i class="space fa-solid fa-cloud-arrow-up"></i><a href="#">Import Student</a></li>
+                    </ul>
+                </div>
+                <!-- Signatory Collapse -->
+                <li class="px-2 ">
+                    <div class="link-collapse py-2" data-bs-toggle="collapse" href="#collapseTwo">
+                        <i class="fa-solid fa-person-circle-check space"></i>
+                        <span>Signatory</span>
+                        <i class="caret fa-solid fa-regular fa-angle-down"></i>
+                    </div>
+                </li>
+                <div class="px-2 collapse collapse-design" id="collapseTwo" data-bs-parent="#acordion">
+                    <ul class="list-unstyled">
+                        <li><i class="space fa-solid fa-file-contract"></i><a href="#"></a>Signatory Record</li>
+                        <li><i class="space fa-solid fa-plus"></i><a href="#">Add Signatory</a></li>
+                        <li><i class="space fa-solid fa-user-pen"></i><a href="#">Modify Signatory</a></li>
+                    </ul>
+                </div>
+                 <!-- Clearance Collapse -->
+                <li class="px-2 ">
+                    <div class="link-collapse py-2" data-bs-toggle="collapse" href="#collapseThree">
+                        <i class="fa-solid fa-file-circle-check space"></i>
+                        <span>Clearance</span>
+                        <i class="caret fa-solid fa-regular fa-angle-down"></i>
+                    </div>
+                </li>
+                <div class="px-2 collapse collapse-design" id="collapseThree" data-bs-parent="#acordion">
+                    <ul class="list-unstyled">
+                        <li><i class="space fa-solid fa-file-lines"></i><a href="#">Clearance Record</a></li>
+                        <li><i class="space fa-solid fa-file-circle-plus"></i><a href="#">Create Clearance</a></li>
+                        <li><i class="space fa-solid fa-pen-to-square"></i><a href="#">Modify Clearance</a></li>
+                    </ul>
+                </div>
+                <!-- Reports -->
+                <li class="px-2 ">
+                    <div class="link-collapse py-2" data-bs-toggle="collapse" href="#collapseFour">
+                        <i class="fa-solid fa-square-poll-vertical space"></i>
+                        <span>Reports</span>
+                        <i class="caret fa-solid fa-regular fa-angle-down"></i>
+                    </div>
+                </li>
+                <div class="px-2 collapse collapse-design" id="collapseFour" data-bs-parent="#acordion">
+                    <ul class="list-unstyled">
+                        <li><i class="space fa-sharp fa-solid fa-file"></i><a href="#">Clearance Report</a></li>
+                        <li><i class="space fa-sharp fa-solid fa-file"></i><a href="#">Signatory Report</a></li>
+                    </ul>
+                </div>
             </ul>
             <hr class="hr-color mx-3">
-            <ul class="list-unstyled px-2">
+            <ul class="list-unstyled px-2 col-ul">
                 <li class="px-2"><a class="text-decoration-none py-2 d-block" href="#"><i class="fa-solid fa-gear space"></i>Settings</a></li>
                 <li class="px-2"><a class="text-decoration-none py-2 d-block" href="../logout.php"><i class="fa-solid fa-right-from-bracket space"></i>Logout</a></li>
             </ul>

@@ -15,6 +15,4 @@
 
     require_once 'classes/Authentication.php';
     $account = new Authentication($conn);
-
-
 ?>
