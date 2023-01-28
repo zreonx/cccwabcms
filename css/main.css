@@ -47,10 +47,15 @@ hr .h-color {
     background-color: #E0FBFC;
 }
 
+.col-ul li {
+    border-radius: 23px;
+    transition: .5s all ease-in-out;
+    
+}
+
 
 .col-ul li.active {
     background-color: #eee !important;
-    border-radius: 12px;
     color: #113886 !important;
 }
 
@@ -60,6 +65,7 @@ hr .h-color {
 
 .col-ul li a {
     color: #fff;
+    
 }
 
 .open-btn {
@@ -72,10 +78,16 @@ hr .h-color {
 .link-collapse {
     display: flex;
     align-items: center;
+    
+}
+
+.link-collapse, .collapse-design {
+    cursor: pointer;
 }
 
 .caret {
     margin-left: auto !important;
+    padding: 0 8px 0 0;
 }
 
 .collapse-design {

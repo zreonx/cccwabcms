@@ -19,13 +19,13 @@
                             $result = $account->checkUserType($email);
                     
                             if(!$result){
-                                echo '<div class=" alert alert-danger error"> Invalid Login Credentials! </div>';
+                                echo '<div class=" alert alert-danger error"> Your account is not recognized by the system. </div>';
                             }else {
                                 if($result['user_type'] === "admin"){
                                     $user_type = $result['user_type'];
                                     $account_details = $account->adminLogin($user_type, $email, $password);
                                     if(!$account_details) {
-                                        echo '<div class="alert  alert-danger error"> Invalid Username or Password! </div>';
+                                        echo '<div class="alert  alert-danger error"> Invalid Username or Password. </div>';
                                     }else {
                                         $_SESSION['username'] = "Admin";
                                         $_SESSION['user_type'] = $account_details['user_type'];
