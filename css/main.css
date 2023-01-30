@@ -101,8 +101,86 @@ hr .h-color {
     text-decoration: none;
 }
 
+.panel-title {
+    font-size: 24px;
+}
+.panel-dashboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
+    gap: 12px;
+}
+/* DASHBOARD BOX */
+.dashboard-card {
+    border: none !important; 
+    border-left: 4px solid var(--themecolor) !important;
+}
 
-@media only screen and (max-width: 1000px){
+.dashboard-card, .d-card-body {
+    background-color: #fff;
+    border-radius: 0;
+}
+
+.d-card-body {
+    padding: 0;
+    padding: 6px;
+}
+
+.parent-d {
+
+}
+
+.dashboard-img {
+    width: 50px !important;
+    height: 50px !important;
+}
+.dcontent {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    grid-auto-flow: row;
+    grid-template-areas: 
+        "top top"
+        "left right";
+    padding-right: 5px;
+}
+.dcontent > div {
+    padding: 4px 3px;
+}
+
+.dcontent-top {
+    grid-area: top;
+}
+.dcontent-left {
+    grid-area: left;
+}
+.dcontent-right {
+    grid-area: right;
+}
+
+.dbadge { 
+    border-radius: 3px;
+    background-color: var(--themecolor);
+    color: #fff;
+    margin: 3px 0;
+}
+.badges > div {
+    padding: 0 .7rem;
+}
+.badges div span:nth-child(1) {
+    font-weight: 300;
+}
+.badges div span:nth-child(2) {
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.shadow-drop-br{-webkit-animation:shadow-drop-br .4s cubic-bezier(.25,.46,.45,.94) both;animation:shadow-drop-br .4s cubic-bezier(.25,.46,.45,.94) both}
+@-webkit-keyframes shadow-drop-br{0%{-webkit-box-shadow:0 0 0 0 transparent;box-shadow:0 0 0 0 transparent}100%{-webkit-box-shadow:12px 12px 20px -12px rgba(0,0,0,.35);box-shadow:12px 12px 20px -12px rgba(0,0,0,.35)}}@keyframes shadow-drop-br{0%{-webkit-box-shadow:0 0 0 0 transparent;box-shadow:0 0 0 0 transparent}100%{-webkit-box-shadow:12px 12px 20px -12px rgba(0,0,0,.35);box-shadow:12px 12px 20px -12px rgba(0,0,0,.35)}}
+
+
+
+.dcontent-text {
+    font-size: 1.8rem;
 }
 
 @media only screen and (max-width: 767px){
@@ -123,6 +201,20 @@ hr .h-color {
 
     .logo {
         margin-top: 0;
+    }
+    .dashboard-card {
+        border: none !important; 
+        border-top: 18px solid var(--themecolor) !important;
+        padding: 20px;
+        border-radius: 10px;
+        margin: 0 auto !important;
+    }
+}
+
+@media only screen and (max-width: 520px){
+    .dashboard-card {
+        width: 80% !important;
+        margin-bottom: 8px !important;
     }
 }
 
