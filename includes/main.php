@@ -208,7 +208,7 @@
         <?php            
                 }
             }else {
-                header("location: ../login.php?cantpasokhere");
+                header("location: ../login.php");
                 exit();
             }
         ?>
