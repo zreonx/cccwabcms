@@ -32,8 +32,17 @@
                                         $_SESSION['user_id'] = $account_details['user_id'];
                                         header("location: admin/dashboard.php");
                                     }
-                                }else {
-                                    echo "youre not an admin";
+                                }else if($result['user_type'] === "signatory"){
+                                    $user_type = $result['user_type'];
+                                    $account_details = $account->adminLogin($user_type, $email, $password);
+                                    if(!$account_details) {
+                                        echo '<div class="alert  alert-danger error"> Invalid Username or Password. </div>';
+                                    }else {
+                                        $_SESSION['username'] = "Signatory";
+                                        $_SESSION['user_type'] = $account_details['user_type'];
+                                        $_SESSION['user_id'] = $account_details['user_id'];
+                                        header("location: signatory/dashboard.php");
+                                    }
                                 }
                             }
                         }

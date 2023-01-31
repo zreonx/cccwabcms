@@ -1,7 +1,8 @@
 <?php
+if (isset($_SESSION['admin'])) {
     $title = "Dashboard";
     require_once '../includes/main.php';
-?>
+    ?>
     
     <div class="panel p-3">
         <h1 class="panel-title">Dashboard</h1>
@@ -99,5 +100,9 @@
 
 
 <?php
-    require_once '../includes/main.footer.php'
+    
+    require_once '../includes/main.footer.php';
+    }else {
+    echo "You cannot access this page !";
+    }
 ?>
