@@ -1,7 +1,9 @@
 <?php
-if (isset($_SESSION['admin'])) {
-    $title = "Dashboard";
+include_once '../includes/session.php';
+if (isset($_SESSION['user_type']) === "admin") {
     require_once '../includes/main.php';
+    $title = "Dashboard";
+   
     ?>
     
     <div class="panel p-3">
